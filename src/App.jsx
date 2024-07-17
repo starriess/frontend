@@ -1,18 +1,27 @@
-const kotak1 = () => {
-  return (
-    <>
-    <h1>kotak1</h1>
-    <kotak1/>
-    </>
-  )
-}
-function App() {
-  const [count, setCount] = useState(0)
 
+import Footer from "./components/Footer";
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import Superhero from "./components/Superhero";
+import Trending from "./components/Trending";
+
+function App() {
   return (
     <>
-    <h1>hello world</h1>
-    <kotak1/>
+
+     
+
+     <div className="intro">
+          <Navbar/>
+            <Intro/>
+
+     </div>
+         <Trending/>
+         <Superhero/>
+         <a href="#top" className="btn btn-warning p-2 tombol"> Go to Top</a>
+         <Footer/>
+      
+
     </>
   )
 }
